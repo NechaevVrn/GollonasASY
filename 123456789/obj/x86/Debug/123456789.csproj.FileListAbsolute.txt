@@ -1,0 +1,8 @@
+D:\1234.Net\123456789\123456789\obj\x86\Debug\_123456789.Form1.resources
+D:\1234.Net\123456789\123456789\obj\x86\Debug\_123456789.Properties.Resources.resources
+D:\1234.Net\123456789\123456789\obj\x86\Debug\123456789.csproj.GenerateResource.Cache
+D:\1234.Net\123456789\123456789\bin\Debug\123456789.exe
+D:\1234.Net\123456789\123456789\bin\Debug\123456789.pdb
+D:\1234.Net\123456789\123456789\obj\x86\Debug\123456789.exe
+D:\1234.Net\123456789\123456789\obj\x86\Debug\123456789.pdb
+D:\1234.Net\123456789\123456789\obj\x86\Debug\123456789.csprojResolveAssemblyReference.cache
