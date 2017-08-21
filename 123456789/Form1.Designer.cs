@@ -36,20 +36,22 @@
             this.FGDstatus = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DataDATA = new System.Windows.Forms.Label();
             this.DataProject = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.логированиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.бекапToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.DataDATA = new System.Windows.Forms.Label();
-            this.бекапToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.ListenButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tikslujb
@@ -123,6 +125,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Базы Данных";
             // 
+            // DataDATA
+            // 
+            this.DataDATA.AutoSize = true;
+            this.DataDATA.Location = new System.Drawing.Point(191, 87);
+            this.DataDATA.Name = "DataDATA";
+            this.DataDATA.Size = new System.Drawing.Size(54, 13);
+            this.DataDATA.TabIndex = 4;
+            this.DataDATA.Text = "Загрузка";
+            this.DataDATA.Click += new System.EventHandler(this.label3_Click);
+            // 
             // DataProject
             // 
             this.DataProject.AutoSize = true;
@@ -168,6 +180,12 @@
             this.логированиеToolStripMenuItem.Text = "Логирование";
             this.логированиеToolStripMenuItem.Click += new System.EventHandler(this.логированиеToolStripMenuItem_Click);
             // 
+            // бекапToolStripMenuItem
+            // 
+            this.бекапToolStripMenuItem.Name = "бекапToolStripMenuItem";
+            this.бекапToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.бекапToolStripMenuItem.Text = "Бекап";
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -178,30 +196,16 @@
             this.timer1.Interval = 3600000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
-            // DataDATA
-            // 
-            this.DataDATA.AutoSize = true;
-            this.DataDATA.Location = new System.Drawing.Point(191, 87);
-            this.DataDATA.Name = "DataDATA";
-            this.DataDATA.Size = new System.Drawing.Size(54, 13);
-            this.DataDATA.TabIndex = 4;
-            this.DataDATA.Text = "Загрузка";
-            this.DataDATA.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // бекапToolStripMenuItem
-            // 
-            this.бекапToolStripMenuItem.Name = "бекапToolStripMenuItem";
-            this.бекапToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.бекапToolStripMenuItem.Text = "Бекап";
-            // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.ListenButton);
             this.groupBox3.Location = new System.Drawing.Point(12, 314);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(269, 146);
+            this.groupBox3.Size = new System.Drawing.Size(269, 215);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Порты";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // groupBox4
             // 
@@ -211,6 +215,16 @@
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Буфризация ";
+            // 
+            // ListenButton
+            // 
+            this.ListenButton.Location = new System.Drawing.Point(170, 168);
+            this.ListenButton.Name = "ListenButton";
+            this.ListenButton.Size = new System.Drawing.Size(93, 41);
+            this.ListenButton.TabIndex = 0;
+            this.ListenButton.Text = "Подробно";
+            this.ListenButton.UseVisualStyleBackColor = true;
+            this.ListenButton.Click += new System.EventHandler(this.ListenButton_Click);
             // 
             // Form1
             // 
@@ -231,6 +245,7 @@
             this.groupBox2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +271,7 @@
         private System.Windows.Forms.ToolStripMenuItem бекапToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button ListenButton;
 
     }
 }
