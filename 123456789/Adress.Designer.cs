@@ -48,6 +48,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "Adress";
             this.Text = "Adress";
+            this.Load += new System.EventHandler(this.Adress_Load);
             this.ResumeLayout(false);
 
         }
